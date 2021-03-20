@@ -23,7 +23,7 @@
                 </a>
                 <ul class="header-links list">
                     <li class="header-links-item">
-                        <a href="./index.html" class="header-list link">Студия</a>
+                        <a href="./index.html" class="header-list current link">Студия</a>
                     </li>
                     <li class="header-links-item">
                         <a href="./portfolio.html" class="header-list link">Портфолио</a>
@@ -59,7 +59,7 @@
         <section class="main-section">
             <div class="hero-container container">
                 <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="button-hero">Заказать услугу</button>
+                <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
             </div>
 
         </section>
@@ -131,13 +131,15 @@
                 <ul class="working-links list">
                     <li class="working-list">
                         <img src="./images/working/comp.jpg" alt="человек печатает текс" width="370" height="294">
-                    </li>
+                        <h3 class="working-list-title">Десктопные приложения</h3>
+                     </li>
                     <li class="working-list">
-                        <img src="./images/working/tel.jpg" alt="человек держит мобильный телефон" width="370"
-                            height="294">
+                        <img src="./images/working/tel.jpg" alt="человек держит мобильный телефон" width="370" height="294">
+                         <h3 class="working-list-title">Мобильные приложения</h3>
                     </li>
                     <li class="working-list">
                         <img src="./images/working/lap.jpg" alt="человек держит планшет" width="370" height="294">
+                        <h3 class="working-list-title">Дизайнерские решения</h3>
                     </li>
                 </ul>
             </div>
@@ -362,13 +364,15 @@
                         <li class="contacts-item"><a class="contacts-address link"
                                 href="https://goo.gl/maps/1gWRvmP1qEhktMv16" target="_blank" rel="noopener noreferrer">
                                 г. Киев,
-                                пр-т Леси Украинки, 26</a></li>
+                                пр-т Леси Украинки, 26</a>
+                            </li>
                         <li class="contacts-item"><a class="contacts-contact link" href="mailto:info@devstudio.com"
                                 lang="en">
-                                info@devstudio.com</a></li>
+                                info@devstudio.com</a>
+                            </li>
                         <li class="contacts-item"><a class="contacts-contact link" href="tel:+380961111111"> +38 096 111
-                                11
-                                11</a></li>
+                                11 11</a>
+                            </li>
                     </ul>
                 </address>
             </div>
@@ -407,6 +411,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="modal-btn-svg" width="11" height="11">
+                    <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
